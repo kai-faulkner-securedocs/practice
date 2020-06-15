@@ -60,8 +60,8 @@ def evaluate_model(model, x, y):
 	return model.evaluate(x, y)
 
 def save_model(model, loc): 
-	model.save(loc)
-	print(f'saved model to {loc}')
+	model.save(f'{loc}.h5')
+	print(f'saved model to {loc}.h5')
 
 def import_model(loc):
 	from keras.models import load_model
