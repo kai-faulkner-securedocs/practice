@@ -29,7 +29,6 @@ def split_data(data):
 	return X, y
 
 def build_model(dim):
-	from tensorflow import keras
 	from tensorflow.keras.models import Sequential
 	from tensorflow.keras.layers import Embedding, Flatten, Dense, Dropout
 
@@ -66,7 +65,7 @@ def save_model(model, loc):
 	print(f'saved model to {loc}')
 
 def import_model(loc):
-	from keras.models import load_model
+	from tensorflow.keras.models import load_model
 	model = load_model(loc)
 	print(f'loaded model from {loc}')
 	return model
