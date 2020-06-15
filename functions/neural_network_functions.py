@@ -60,6 +60,8 @@ def evaluate_model(model, x, y):
 	return model.evaluate(x, y)
 
 def save_model(model, loc): 
+	from tensorflow import keras
+	#updated
 	model.save(loc)
 	print(f'saved model to {loc}')
 
