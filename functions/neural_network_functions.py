@@ -60,7 +60,7 @@ def evaluate_model(model, x, y):
 	return model.evaluate(x, y)
 
 def save_model(model, loc): 
-	model.save(f'{loc}')
+	model.save(loc)
 	print(f'saved model to {loc}')
 
 def import_model(loc):
