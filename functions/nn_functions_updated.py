@@ -30,8 +30,8 @@ def split_data(data):
 
 def build_model(dim):
 	from tensorflow import keras
-	from keras.models import Sequential
-	from keras.layers import Embedding, Flatten, Dense, Dropout
+	from tensorflow.keras.models import Sequential
+	from tensorflow.keras.layers import Embedding, Flatten, Dense, Dropout
 
 	model = Sequential()
 	model.add(Embedding(5000, 256, input_length=dim))
